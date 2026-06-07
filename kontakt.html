@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunArt | Kontakt</title>
+  <meta name="description" content="Kontakt i prijava za LunArt školu kreativnosti, javnog nastupa i glume za odrasle u Novom Sadu.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#pocetna" aria-label="LunArt pocetna">
+      <img src="images/logo/logo-full-light.png" alt="LunArt logo">
+    </a>
+    <nav class="main-nav" aria-label="Glavna navigacija">
+      <a href="galerija.html">Galerija</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section contact-layout" id="prijava">
+      <aside class="contact-info panel">
+        <h2>Kontakt podaci</h2>
+        <ul class="contact-list">
+          <li><span>Adresa</span><strong>Škerlićeva 2, Novi Sad</strong></li>
+          <li><span>Telefon</span><strong>064 3241543</strong></li>
+          <li><span>E-mail</span><strong><a href="mailto:lunartskola@gmail.com">lunartskola@gmail.com</a></strong></li>
+        </ul>
+
+        <div class="socials">
+          <a href="https://www.facebook.com/LunArt2017/" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/lunart_gluma_za_odrasle_ns/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+
+        <div class="admission-text">
+          <h3>Ko može da se prijavi?</h3>
+          <p>Svi zainteresovani od 25 godina pa naviše su dobrodošli. Bez obzira na prethodno iskustvo, dobra volja i želja za igrom je jedino što je potrebno.</p>
+
+          <h3>O čemu se radi?</h3>
+          <p>Program kombinuje metode primenjenog i klasičnog pozorišta, pružajući vam priliku da istražite različite pristupe glumi. Kroz radionice ćete istražiti različite tehnike, unaprediti svoje veštine i otkriti nove načine izražavanja.</p>
+
+          <h3>Predavači</h3>
+          <p>Radionice vode Sonja Leštar i Aleksandar Boškov.</p>
+
+          <h3>Rezultat rada</h3>
+          <p>Ukoliko grupa izrazi želju, zajedno ćemo kreirati društveno angažovanu predstavu koja će biti rezultat rada i zalaganja polaznika.</p>
+
+          <h3>Kako se prijaviti?</h3>
+          <p>Za sve dodatne informacije i prijave možete pisati putem društvenih mreža, e-maila ili popuniti formular na ovoj strani.</p>
+
+          <p class="admission-closing">Budite deo zajednice koja koristi pozorište zarad društvenih promena.</p>
+        </div>
+      </aside>
+
+      <form class="contact-form panel" id="contactForm" novalidate>
+        <h2>Prijavni formular</h2>
+
+        <label for="fullName">Ime i prezime</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Unesi ime i prezime">
+
+        <label for="email">E-mail adresa</label>
+        <input type="text" id="email" name="email" placeholder="mail@email.com">
+
+        <label for="phone">Telefon</label>
+        <input type="text" id="phone" name="phone" placeholder="Broj telefona">
+
+        <label for="term">Termin koji ti više odgovara</label>
+        <select id="term" name="term">
+          <option value="">Izaberi termin</option>
+          <option>Nedeljom: 19:00 - 21:30 h</option>
+          <option>Ponedeljkom: 19:30 - 22:00 h</option>
+        </select>
+
+        <label for="interest">Šta te najviše zanima?</label>
+        <select id="interest" name="interest">
+          <option value="">Izaberi opciju</option>
+          <option>Škola glume</option>
+          <option>Radionice</option>
+          <option>Časovi javnog nastupa</option>
+          <option>Sve</option>
+          
+        </select>
+
+        <label for="message">Poruka</label>
+        <textarea id="message" name="message" rows="6" placeholder="Napiši ukratko zašto želiš da se prijaviš..."></textarea>
+
+        <button type="submit" class="btn primary">Pošalji prijavu</button>
+        <div id="formOutput" class="form-output" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="map-section">
+      <h2>Lokacija</h2>
+      <div class="map-frame">
+        <iframe title="Mapa lokacije Škerlićeva 2 Novi Sad" src="https://maps.google.com/maps?q=%C5%A0kerli%C4%87eva%202%2C%20Novi%20Sad&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="images/logo/logo-full-light.png" alt="LunArt logo">
+    <p>© 2026 LunArt. Sajt je napravljen kao školski projekat Edukativnog Centra. Učenica: Jelena Basarić a.k.a. fanuchi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

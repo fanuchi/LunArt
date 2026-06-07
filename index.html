@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunArt | Škola glume za odrasle</title>
+  <meta name="description" content="LunArt je škola kreativnosti, javnog nastupa i glume za odrasle u Novom Sadu.">
+
+  <script>
+  (function () {
+    var navEntries = performance.getEntriesByType
+      ? performance.getEntriesByType("navigation")
+      : [];
+
+    var navEntry = navEntries.length > 0 ? navEntries[0] : null;
+    var isReload = navEntry && navEntry.type === "reload";
+
+    if (window.location.hash === "#pocetna" && !isReload) {
+      document.documentElement.classList.add("skip-intro");
+    }
+  })();
+</script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="intro-active">
+
+  <section id="curtainIntro" class="curtain-intro" aria-label="Uvodna zavesa">
+    <div class="curtain curtain-left"></div>
+    <div class="curtain curtain-right"></div>
+
+    <div class="intro-content">
+      <img class="intro-logo" src="images/logo/logo-full-light.png" alt="LunArt logo">
+
+      <button id="enterButton" class="ticket-image-button" type="button" aria-label="Uđi na sajt">
+        <img src="images/ui/ulaznica.png" alt="Ulaznica">
+      </button>
+    </div>
+  </section>
+
+  <header class="site-header">
+    <a class="brand" href="index.html#pocetna" aria-label="LunArt početna">
+      <img src="images/logo/logo-full-light.png" alt="LunArt logo">
+    </a>
+
+    <nav class="main-nav" aria-label="Glavna navigacija">
+      <a href="galerija.html">Galerija</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pocetna" class="hero hero-home">
+      <div class="moon-orbit orbit-one"></div>
+      <div class="moon-orbit orbit-two"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Škola kreativnosti, javnog nastupa i glume za odrasle</p>
+        <h1>Prostor gde se i odrasli igraju</h1>
+        <p class="hero-lead">Kreativnost ne pripada samo profesionalnim umetnicima, ona je danas možda najcenjenija sposobnost svakog čoveka u bilo kojoj sferi. I zato, ne zaboravite da se igrate!</p>
+
+        <div class="button-row">
+          <a href="kontakt.html#prijava" class="btn primary">Prijavi se</a>
+          <a href="galerija.html#predstave" class="btn ghost">Pogledaj predstave</a>
+        </div>
+      </div>
+
+      <div class="hero-image stage-card">
+        <img src="images/home/home-theatre-photo.jpg" alt="LunArt scena">
+      </div>
+    </section>
+
+    <section id="o-nama" class="section about-section">
+      <div class="section-grid two-columns">
+        <div>
+          <p class="eyebrow warm">O školi</p>
+
+          <p class="about-lead">
+            LunArt je nastao iz ideje da odrasli imaju prostor za igru, kreativnost, izražavanje i lični razvoj kroz pozorište.
+          </p>
+
+          <p>Školu je osnovala glumica i dramska pedagoškinja Sonja Leštar. LunArt postoji od 2017. godine i okuplja ljude različitih profesija i životnih iskustava koje povezuje želja da istražuju sebe, razvijaju kreativnost i stiču sigurnost u javnom nastupu.</p>
+
+          <p>Kroz radionice, vežbe, improvizaciju i rad na predstavama, polaznici imaju priliku da se oslobode treme, razvijaju samopouzdanje, bolje komuniciraju i otkrivaju potencijale koje možda nisu ni znali da poseduju.</p>
+
+          <p>Kako u LunArtu vole da kažu, ovo nije samo škola glume. To je mesto gde se i odrasli igraju.</p>
+        </div>
+
+        <div class="image-panel">
+          <img src="images/home/about-scene.jpg" alt="Pozorišna atmosfera">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section program-strip">
+  <p class="eyebrow">Radimo na</p>
+
+  <div class="program-grid">
+    <article class="program-card">
+      <h3>Gluma</h3>
+      <p>Istraživanje izraza, emocija, scene i karaktera.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Javni nastup</h3>
+      <p>Sigurniji govor, jasnija komunikacija i slobodnije obraćanje pred ljudima.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Primenjeno pozorište</h3>
+      <p>Pozorište kao prostor za istraživanje društvenih tema i ličnog iskustva.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Improvizacija</h3>
+      <p>Spontanost, igra, brza reakcija i oslobađanje od straha da sve mora da bude savršeno.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Kreativnost</h3>
+      <p>Podsticanje mašte, igre i stvaralačkog izražavanja.</p>
+    </article>
+  </div>
+</section>
+
+    <section class="section teachers-section">
+      
+        <p class="eyebrow warm">Predavači</p>
+             
+
+      <div class="teacher-grid">
+        <article class="teacher-card">
+          <img src="images/team/sonja-lestar.jpg" alt="Sonja Leštar">
+
+          <div class="teacher-body">
+            <h3>Sonja Leštar</h3>
+            <p class="role">glumica i pozorišna pedagoškinja</p>
+            <p>Vodi polaznike kroz glumački proces, improvizaciju, javni nastup, scenski izraz i rad sa grupom.</p>
+          </div>
+        </article>
+
+        <article class="teacher-card">
+          <img src="images/team/aleksandar-boskov-bw.jpg" alt="Aleksandar Boškov">
+
+          <div class="teacher-body"
+            <h3>Aleksandar Boškov</h3>
+            <p class="role">koreograf</p>
+            <p>Radi sa polaznicima kroz scenski proces, vežbe, igru, partnerski rad i razvoj nastupa.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <img src="images/logo/logo-moon.png" alt="" class="quote-moon">
+      <blockquote>Kreativnost ne pripada samo profesionalnim umetnicima.</blockquote>
+      <p>Ona je sposobnost svakog čoveka da misli, oseća, reaguje i igra se na nov način.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="images/logo/logo-full-light.png" alt="LunArt logo">
+    <p>© 2026 LunArt. Sajt je napravljen kao školski projekat Edukativnog Centra. Učenica: Jelena Basarić a.k.a. fanuchi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
