@@ -1130,6 +1130,8 @@ textarea:focus {
 
   .teacher-card img {
     height: 270px;
+    object-fit: cover;
+  object-position: top center;
   }
 
   .block-heading {
@@ -1186,5 +1188,21 @@ textarea:focus {
 
   .ticket-image-button img {
     max-height: 18vh;
+  }
+}
+@media (max-width: 720px) {
+  .performance-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .poster-frame img {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .performance-copy {
+    width: 100%;
   }
 }
